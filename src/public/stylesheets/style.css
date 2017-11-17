@@ -1,0 +1,70 @@
+/*body {
+   background-image: url('https://images-na.ssl-images-amazon.com/images/I/51MmZy0sikL._SY355_.jpg');
+}
+
+h1 {
+    background-image: url('https://secure.static.tumblr.com/d33ead7e1b09775494460115c8ce4fda/aakh9xb/6rGnq8syq/tumblr_static_tumblr_static__640.jpg');
+    color: red;
+    text-align: center;
+    font-size: 450%;
+    font-family: "Bookman";
+
+}
+
+h2 {
+  text-align: center;
+  color: red;
+  font-size: 250%;
+
+}
+
+img{
+  text-align: center;
+}
+
+span{
+  text-align: center;
+  color: red;
+}
+
+p {
+	color: red;
+  text-align: center;
+  font-size: 100%;
+  font-family: "Bookman";
+}
+
+form {
+  color: red;
+  text-align: center;
+  font-family: "Bookman";
+  font-size: 200%;
+}*/
+
+.hidden{
+  visibility:hidden;
+}
+
+body {
+   background-image: url('https://images-na.ssl-images-amazon.com/images/I/51MmZy0sikL._SY355_.jpg');
+}
+
+form {
+  color: red;
+  text-align: center;
+  font-family: "Bookman";
+  font-size: 200%;
+}
+
+.buttonHolder{
+  text-align:center;
+}
+
+.game {
+    display: inline-block;
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+    text-align: center;
+}
