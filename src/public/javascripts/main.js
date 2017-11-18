@@ -66,12 +66,12 @@ function main(){
 
 		//display starting cards and totals
 		//display player total
-		let heading = document.createElement("h1");
+		let heading1 = document.createElement("h1");
 		let content = document.createTextNode("Computer Hand - Total: ?");
-		heading.appendChild(content);
+		heading1.appendChild(content);
 
 		let currentDiv = document.querySelector(".game");
-		document.body.appendChild(heading, currentDiv);
+		document.body.appendChild(heading1, currentDiv);
 
 		//adding total
 		newDiv = document.createElement("span");
@@ -89,7 +89,8 @@ function main(){
 		document.body.appendChild(newDiv, currentDiv);
 
 		//display player total
-		heading = document.createElement("h1");
+		let heading = document.createElement("h1");
+		heading.id = "player";
 		content = document.createTextNode("Player Hand - Total: "+playerTotal);
 		heading.appendChild(content);
 
@@ -137,7 +138,7 @@ function main(){
 			if (playerTotal > 21 && (player[player.length-1].value === 'A')){
 				playerTotal-=10;
 			}
-
+			
 			//new card
 			newDiv = document.createElement("p");
 			content = document.createTextNode(player[player.length-1].value+" "+player[player.length-1].suit);
@@ -146,10 +147,24 @@ function main(){
 			currentDiv = document.querySelector(".game");
 			document.body.appendChild(newDiv, currentDiv);
 
+			//update total
+			let newHeading = document.createElement("h1");
+			newHeading.id = "player";
+			content = document.createTextNode("Player Hand - Total: "+playerTotal);
+			newHeading.appendChild(content);
+			currentDiv = document.querySelector(".game");
+			document.body.appendChild(newHeading, currentDiv);
+
+			const prev = document.getElementById('player');
+			let parent = prev.parentNode;
+			parent.replaceChild(newHeading, prev);
+			
 			//check if there is a winner
 			if (playerTotal > 21){
-				renderResult(player, cpu, playerTotal, cpuTotal, "You lose!!! :(")
-			}
+					renderResult(player, cpu, playerTotal, cpuTotal, "You lose!!! :(")
+				}
+
+		
 
 		});
 
