@@ -47,6 +47,7 @@ form {
 
 body {
    background-image: url('https://images-na.ssl-images-amazon.com/images/I/51MmZy0sikL._SY355_.jpg');
+   text-align: center;
 }
 
 form {
@@ -60,11 +61,29 @@ form {
   text-align:center;
 }
 
-.game {
+/*.start {
+    display: inline-block;
+    width: 250px;
+    height: 105px;
+    background-color: white;
+    border: 0.3 solid #aaa;
+}*/
+
+p {
+    text-align: left;
     display: inline-block;
     width: 150px;
-    height: 75px;
-    margin: 10px;
-    border: 3px solid #73AD21;
-    text-align: center;
+    height: 205px;
+    margin: 20px;
+    background-color: white;
+    border: 0.3 solid #aaa;
+    font-size: 150%;
+}
+
+button {
+  display: block;
+  margin:0 auto;
+  font-size: 150%;
+
+
 }
